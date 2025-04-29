@@ -11,6 +11,7 @@ import (
 	ceos "github.com/srl-labs/containerlab/nodes/ceos"
 	checkpoint_cloudguard "github.com/srl-labs/containerlab/nodes/checkpoint_cloudguard"
 	crpd "github.com/srl-labs/containerlab/nodes/crpd"
+	cvsr "github.com/srl-labs/containerlab/nodes/cvsr"
 	cvx "github.com/srl-labs/containerlab/nodes/cvx"
 	dell_sonic "github.com/srl-labs/containerlab/nodes/dell_sonic"
 	ext_container "github.com/srl-labs/containerlab/nodes/ext_container"
@@ -93,6 +94,7 @@ func (c *CLab) RegisterNodes() {
 	vr_cat9kv.Register(c.Reg)
 	vr_openwrt.Register(c.Reg)
 	xrd.Register(c.Reg)
+	cvsr.Register(c.Reg)
 	rare.Register(c.Reg)
 	c8000.Register(c.Reg)
 	k8s_kind.Register(c.Reg)
